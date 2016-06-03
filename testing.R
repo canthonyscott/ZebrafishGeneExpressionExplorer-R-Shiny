@@ -1,9 +1,9 @@
 # get list of genes
 library("plotly")
-list_of_genes <- c("cmlc", "vmhc")
+list_of_genes <- "vmhc cmlc smar"
 
 # split the input string into a list
-newlist <- strsplit(list_of_genes, " ")
+newlist <- as.list(strsplit(list_of_genes, "[ ]")[[1]])
 
 # read in all rlog transformed data
 rlog_data_all <- read.table("data/rld_all.tabular")

@@ -16,12 +16,14 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
       textInput("gene_input", label = h3("Enter gene list separated by spaces"), 
-                value ="cmlc nkx vmhc")
+                value ="cmlc nkx vmhc"),
+      br(),
+      actionButton("generate", label = "Get Heatmap!")
     ),
 
     # Show a plot of the generated distribution
     mainPanel(
-      plotOutput("heatMap")
+      plotlyOutput("heatMap")
     )
   )
 ))
