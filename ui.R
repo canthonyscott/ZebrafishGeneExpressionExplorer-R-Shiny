@@ -6,11 +6,12 @@
 #
 
 library(shiny)
+library(plotly)
 
 shinyUI(fluidPage(
 
   # Application title
-  titlePanel("Old Faithful Geyser Data"),
+  titlePanel("Zebrafish Gene Expression Explorer"),
 
   # Sidebar with a slider input for number of bins
   sidebarLayout(
