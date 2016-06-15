@@ -42,7 +42,7 @@ shinyServer(function(input, output) {
         l = 80)
       
       plot_ly(z = df, type = "heatmap", x = xlabs, y = rownames(df)) %>%
-        layout(xaxis = ax, yaxis = yx, margin = m)
+        layout(autosize = T, xaxis = ax, yaxis = yx, margin = m)
       
     })
     
