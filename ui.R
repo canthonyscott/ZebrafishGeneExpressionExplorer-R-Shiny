@@ -9,6 +9,8 @@ library(shiny)
 library(plotly)
 
 shinyUI(fluidPage(
+  
+  theme = "superhero.min.css",
 
   # Application title
   titlePanel("Zebrafish Gene Expression Explorer"),
